@@ -1,0 +1,108 @@
+body{
+    color: white;
+    margin: 0;
+    min-height: 100vh;
+    /* display: flex; */
+    align-items: center;
+}
+.head{
+    display: grid;
+    margin-top: 0;
+    padding: 1rem;
+    /* background-color: #333; */
+    color: black;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/9247-218250389_tiny.jpg);
+}
+
+.head h1{
+    font-size: 42px;
+    text-shadow: 2px 2px 3px cyan;
+}
+.head .img{
+    display: grid;
+    width: 80px;
+    height: 80px;
+    border: 2px solid;
+    border-radius: 50%;
+    grid-row: row;
+    margin-left: -35px;
+    animation: run;
+    background: linear-gradient(pink,cyan,violet);
+    animation-duration: .46257ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes run {
+    from{
+        transform: rotate(0deg);
+        box-shadow: 10px 10px 40px cyan;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+main{
+    min-height: 100vh;
+    margin: auto;
+    padding: 1.2rem;
+}
+
+.cards-container{
+    display: flex;
+    margin: 1.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    /* background-color: green; */
+    max-width: 910px;
+    margin: auto;
+}
+.card{
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.card h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+.card p{
+    font-size: 16px;
+    margin-top: 1.4rem;
+    opacity: .6;
+    line-height: 32px;
+    margin-bottom: 2rem;
+}
+.card a{
+    border: 1px solid;
+    border-radius: 60px;
+    padding: 1em 2em;
+    margin-top: auto;
+    text-align: center;
+}
+
+/* 1st card */
+.cards-container .orange-card{
+    background-color:#E28525 ;
+}
+/* 2nd card */
+.cards-container .green-card{
+    background-color:#016972 ;
+}
+/* 3rd card */
+.cards-container .dark-green-card{
+    background-color:#00403F ;
+}
+
+
+
